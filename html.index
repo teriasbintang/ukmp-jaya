@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UKM Penulis Universitas Negeri Malang</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0f2c59',
+                            900: '#0a1d3c',
+                        },
+                        gold: {
+                            500: '#d4af37',
+                            600: '#b59226',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-navy-800 text-gold-500 flex items-center justify-center font-bold font-serif text-xl shadow">
+                    P
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-lg text-navy-800 block leading-tight">UKM PENULIS</span>
+                    <span class="text-xs text-slate-500 font-medium tracking-wider uppercase">Universitas Negeri Malang</span>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#tentang" class="hover:text-navy-800 transition">Tentang Kami</a>
+                <a href="#pilar" class="hover:text-navy-800 transition">Bidang</a>
+                <a href="#visi-misi" class="hover:text-navy-800 transition">Visi & Misi</a>
+                <a href="#struktur" class="hover:text-navy-800 transition">Struktur</a>
+                <a href="#agenda" class="hover:text-navy-800 transition">Agenda</a>
+                <a href="#prestasi" class="hover:text-navy-800 transition">Prestasi</a>
+            </nav>
+
+            <a href="#kontak" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-navy-800 hover:bg-navy-900 transition shadow-sm">
+                Hubungi Kami
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-navy-900 to-navy-800 text-white py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 bg-gold-500/10 text-gold-500 border border-gold-500/20 rounded-full text-xs font-semibold tracking-wider uppercase mb-6">
+                Organisasi Penalaran UM
+            </span>
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                Tajamkan Pena, <span class="text-gold-500 italic">Luaskan Cakrawala</span>
+            </h1>
+            <p class="text-slate-300 text-lg sm:text-xl max-w-3xl mx-auto font-light leading-relaxed mb-10">
+                Ekosistem inklusif bagi mahasiswa Universitas Negeri Malang untuk berkolaborasi, mengasah pemikiran kritis, dan menginspirasi dunia melalui untaian kata.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#video-profil" class="w-full sm:w-auto px-8 py-3.5 bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold rounded-full transition shadow-lg flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-play text-xs"></i> Tonton Profil UKM
+                </a>
+                <a href="#tentang" class="w-full sm:w-auto px-8 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-full border border-white/20 backdrop-blur transition">
+                    Pelajari Selengkapnya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7">
+                    <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider block mb-2">Tentang Kami</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-800 mb-6 leading-tight">
+                        Wadah Penalaran & Budaya Literasi Kampus
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Unit Kegiatan Mahasiswa (UKM) Penulis Universitas Negeri Malang (UM) merupakan organisasi kemahasiswaan yang bergerak di bidang penalaran. Sebagai bagian dari pilar penalaran ini, UKM Penulis UM berkomitmen menumbuhkan budaya literasi yang kuat di lingkungan kampus, sekaligus mencetak generasi muda yang kritis, adaptif, dan mampu menuangkan gagasan secara konstruktif.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Tulisan dipercaya sebagai instrumen perubahan yang kuat. Oleh karena itu, UKM Penulis UM hadir bukan hanya sebagai wadah belajar, melainkan sebagai ekosistem inklusif bagi seluruh mahasiswa UM untuk berkolaborasi, menghasilkan karya nyata, dan menginspirasi dunia melalui untaian kata.
+                    </p>
+                    <div class="p-4 bg-slate-50 border-l-4 border-gold-500 rounded-r-lg">
+                        <p class="font-serif italic text-navy-800 font-medium">"Mari tajamkan pena dan luaskan cakrawala."</p>
+                    </div>
+                </div>
+
+                <!-- Video Profil Embed Box -->
+                <div id="video-profil" class="lg:col-span-5">
+                    <div class="bg-navy-800 rounded-2xl p-2 shadow-xl border border-slate-100">
+                        <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-900 group flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" alt="Video Profil UKM Penulis" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-500">
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener" class="relative z-10 w-16 h-16 rounded-full bg-gold-500 text-navy-900 flex items-center justify-center text-xl shadow-lg group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-play ml-1"></i>
+                            </a>
+                            <span class="absolute bottom-4 left-4 right-4 text-center text-xs text-white font-medium bg-black/50 backdrop-blur py-1.5 rounded-lg">
+                                Klik untuk Memutar Video Profil UKM Penulis UM
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 Ranah Kepenulisan -->
+    <section id="pilar" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider block mb-2">Bidang Fokus</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-800 mb-4">Tiga Ranah Utama Kepenulisan</h2>
+                <p class="text-slate-600">Dalam menjalankan roda organisasi, UKM Penulis UM berfokus pada tiga pilar utama kepenulisan.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Ilmiah -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-blue-50 text-navy-800 flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-navy-800 mb-4">Ilmiah</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">
+                            Para anggota diajak mengasah kemampuan berpikir logis dan metodologis melalui berbagai bentuk tulisan ilmiah, penelitian, karya tulis inovatif, dan gagasan futuristik.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-navy-800">
+                        <span>LKTI & Article</span>
+                        <i class="fa-solid fa-arrow-right text-gold-500"></i>
+                    </div>
+                </div>
+
+                <!-- Sastra -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-amber-50 text-gold-600 flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-feather-pointed"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-navy-800 mb-4">Sastra</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">
+                            Ruang kreativitas dibuka tanpa batas bagi anggota untuk mengeksplorasi estetika bahasa, kedalaman rasa, puisi, cerpen, esai populer, dan naskah drama.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-navy-800">
+                        <span>Puisi & Prosa</span>
+                        <i class="fa-solid fa-arrow-right text-gold-500"></i>
+                    </div>
+                </div>
+
+                <!-- Jurnalistik -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-navy-800 mb-4">Jurnalistik</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">
+                            Fokus pelatihan diarahkan untuk melatih ketajaman investigasi, penyajian informasi yang objektif, serta penyebaran berita yang edukatif dan terpercaya.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-navy-800">
+                        <span>Liputan & Pers</span>
+                        <i class="fa-solid fa-arrow-right text-gold-500"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visi & Misi Section -->
+    <section id="visi-misi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Visi Card -->
+            <div class="bg-navy-800 text-white rounded-3xl p-8 sm:p-12 mb-12 shadow-xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl font-serif text-white pointer-events-none">"</div>
+                <div class="max-w-3xl">
+                    <span class="text-gold-500 font-semibold text-sm uppercase tracking-wider block mb-3">Our Vision</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold leading-relaxed">
+                        Menjadi organisasi kepenulisan terdepan yang mampu menciptakan lingkungan positif bagi semua anggota untuk mengembangkan minat dan bakat serta berkontribusi aktif dalam penyebaran pengetahuan dan pemahaman tentang kepenulisan untuk mencetak generasi penuh prestasi.
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Misi Grid -->
+            <div>
+                <h3 class="font-serif text-2xl font-bold text-navy-800 mb-8 flex items-center gap-3">
+                    <span class="w-3 h-3 rounded-full bg-gold-500"></span>
+                    Our Mission
+                </h3>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex items-start gap-4">
+                        <span class="text-3xl font-serif font-bold text-gold-500 opacity-80">01</span>
+                        <div>
+                            <h4 class="font-bold text-navy-800 mb-2">Budaya Kerja Positif</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Membangun budaya kerja yang positif dan berbasis kekeluargaan.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex items-start gap-4">
+                        <span class="text-3xl font-serif font-bold text-gold-500 opacity-80">02</span>
+                        <div>
+                            <h4 class="font-bold text-navy-800 mb-2">Platform Wadah Bakat</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Menyediakan platform bagi mahasiswa Universitas Negeri Malang dan masyarakat umum untuk mengasah dan mengekspresikan bakat kepenulisan mereka.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex items-start gap-4">
+                        <span class="text-3xl font-serif font-bold text-gold-500 opacity-80">03</span>
+                        <div>
+                            <h4 class="font-bold text-navy-800 mb-2">Adaptif & Kreatif</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Menjadi organisasi yang tanggap terhadap perubahan dan selalu berusaha untuk adaptif dan kreatif.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Struktur Organisasi -->
+    <section id="struktur" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider block mb-2">SOTK</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-800 mb-4">Struktur Organisasi</h2>
+                <p class="text-slate-600">Jajaran kepengurusan UKM Penulis UM yang bersinergi mencapai visi bersama.</p>
+            </div>
+
+            <!-- Hierarki / Grid Struktur -->
+            <div class="space-y-6 max-w-5xl mx-auto">
+                <!-- Top Level -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                        <div class="w-12 h-12 rounded-full bg-navy-800 text-gold-500 flex items-center justify-center mx-auto mb-3 text-lg">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <h4 class="font-bold text-navy-800 text-lg">Dosen Pembimbing</h4>
+                        <p class="text-xs text-slate-500">Pembina & Penasihat Akademik</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                        <div class="w-12 h-12 rounded-full bg-navy-800 text-gold-500 flex items-center justify-center mx-auto mb-3 text-lg">
+                            <i class="fa-solid fa-[#0f2c59] fa-shield-halved"></i>
+                        </div>
+                        <h4 class="font-bold text-navy-800 text-lg">Badan Pengawas</h4>
+                        <p class="text-xs text-slate-500">Pengawasan & Evaluasi Organisasi</p>
+                    </div>
+                </div>
+
+                <!-- BPH -->
+                <div class="bg-navy-800 text-white p-6 rounded-2xl shadow-md text-center">
+                    <h4 class="font-serif font-bold text-xl text-gold-500 mb-1">Badan Pengurus Harian (BPH)</h4>
+                    <p class="text-xs text-slate-300">Ketua Umum, Wakil Ketua, Sekretaris, & Bendahara</p>
+                </div>
+
+                <!-- Departemen Header -->
+                <div class="pt-4 text-center">
+                    <span class="text-xs font-semibold tracking-wider text-slate-400 uppercase">Lima Departemen Utama</span>
+                </div>
+
+                <!-- Departemen Grid -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-gold-500 transition">
+                        <div class="text-navy-800 font-bold mb-1 flex items-center gap-2">
+                            <i class="fa-solid fa-users text-gold-600 text-sm"></i>
+                            Keorganisasian
+                        </div>
+                        <p class="text-xs text-slate-500">Pengembangan internal, tata kelola, & kaderisasi.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-gold-500 transition">
+                        <div class="text-navy-800 font-bold mb-1 flex items-center gap-2">
+                            <i class="fa-solid fa-house text-gold-600 text-sm"></i>
+                            Rumah Tangga
+                        </div>
+                        <p class="text-xs text-slate-500">Pengelolaan sekretariat, inventaris, & aset.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-gold-500 transition">
+                        <div class="text-navy-800 font-bold mb-1 flex items-center gap-2">
+                            <i class="fa-solid fa-lightbulb text-gold-600 text-sm"></i>
+                            Inkubator
+                        </div>
+                        <p class="text-xs text-slate-500">Pembinaan & fasilitasi karya ilmiah unggulan.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-gold-500 transition">
+                        <div class="text-navy-800 font-bold mb-1 flex items-center gap-2">
+                            <i class="fa-solid fa-book-open text-gold-600 text-sm"></i>
+                            Labostra
+                        </div>
+                        <p class="text-xs text-slate-500">Laboratorium Sastra untuk cipta & apresiasi karya.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-gold-500 transition sm:col-span-2 lg:col-span-1">
+                        <div class="text-navy-800 font-bold mb-1 flex items-center gap-2">
+                            <i class="fa-solid fa-bullhorn text-gold-600 text-sm"></i>
+                            LPM Siar
+                        </div>
+                        <p class="text-xs text-slate-500">Lembaga Pers Mahasiswa untuk penerbitan & penerbitan Berita.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda & Pengumuman -->
+    <section id="agenda" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider block mb-2">Informasi Terkini</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-800">Pengumuman & Agenda</h2>
+                </div>
+                <a href="#" class="mt-4 md:mt-0 text-sm font-semibold text-navy-800 hover:text-gold-600 flex items-center gap-2">
+                    Lihat Semua Kalender Kegiatan <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card Agenda 1 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs font-semibold text-gold-600 bg-gold-500/10 px-3 py-1 rounded-full w-fit mb-4">
+                            <i class="fa-regular fa-calendar"></i> Segera Datang
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-navy-800 mb-2">Pelatihan Kepenulisan Ilmiah & KTI 2026</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                            Sesi intensif persiapan lomba KTI Nasional bagi mahasiswa UM bersama pemateri nasional.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/60 flex items-center justify-between text-xs text-slate-500">
+                        <span><i class="fa-regular fa-clock mr-1"></i> Aula Gedung A19 UM</span>
+                        <a href="#" class="font-bold text-navy-800 hover:underline">Detail &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card Agenda 2 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs font-semibold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full w-fit mb-4">
+                            <i class="fa-solid fa-pen-nib"></i> Workshop Sastra
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-navy-800 mb-2">Panggung Apresiasi & Malam Puisi Labostra</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                            Mewadahi pembacaan karya sastra, bedah antologi puisi, dan diskusi estetika bahasa.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/60 flex items-center justify-between text-xs text-slate-500">
+                        <span><i class="fa-regular fa-clock mr-1"></i> Gazebo Perpustakaan UM</span>
+                        <a href="#" class="font-bold text-navy-800 hover:underline">Detail &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card Agenda 3 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs font-semibold text-blue-700 bg-blue-100 px-3 py-1 rounded-full w-fit mb-4">
+                            <i class="fa-solid fa-bullhorn"></i> Pers & Jurnalistik
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-navy-800 mb-2">Diklat Jurnalistik Tingkat Dasar LPM Siar</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                            Melatih wartawan muda dalam investigasi, penyuntingan berita, dan etika pers mahasiswa.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/60 flex items-center justify-between text-xs text-slate-500">
+                        <span><i class="fa-regular fa-clock mr-1"></i> Ruang Sidang Sekretariat</span>
+                        <a href="#" class="font-bold text-navy-800 hover:underline">Detail &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri & Prestasi -->
+    <section id="prestasi" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Prestasi -->
+                <div>
+                    <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider block mb-2">Capaian Anggota</span>
+                    <h2 class="font-serif text-3xl font-bold text-navy-800 mb-8">Prestasi UKM Penulis</h2>
+
+                    <div class="space-y-4">
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-amber-100 text-gold-600 flex-shrink-0 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-gold-600 uppercase">Juara 1 Tingkat Nasional</span>
+                                <h4 class="font-bold text-navy-800">Lomba Karya Tulis Ilmiah Nasional (LKTIN) 2025</h4>
+                                <p class="text-xs text-slate-500">Tim Inkubator UKM Penulis UM</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-100 text-slate-600 flex-shrink-0 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-medal"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-slate-500 uppercase">Juara 2 Nasional</span>
+                                <h4 class="font-bold text-navy-800">Pekan Cipta Sastra & Cipta Puisi Mahasiswa</h4>
+                                <p class="text-xs text-slate-500">Departemen Labostra</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-amber-100 text-gold-600 flex-shrink-0 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-gold-600 uppercase">Anugerah Media Pers Terbaik</span>
+                                <h4 class="font-bold text-navy-800">LPM Siar - Kategori Majalah Kampus Edukatif</h4>
+                                <p class="text-xs text-slate-500">Lembaga Pers Mahasiswa Siar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Galeri -->
+                <div>
+                    <span class="text-gold-600 font-semibold text-sm uppercase tracking-wider block mb-2">Dokumentasi</span>
+                    <h2 class="font-serif text-3xl font-bold text-navy-800 mb-8">Galeri Kegiatan</h2>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="relative group rounded-xl overflow-hidden aspect-video bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80" alt="Galeri 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+                                <span class="text-xs text-white font-medium">Workshop Kepenulisan</span>
+                            </div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden aspect-video bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80" alt="Galeri 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+                                <span class="text-xs text-white font-medium">Diskusi Penalaran</span>
+                            </div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden aspect-video bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=600&q=80" alt="Galeri 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+                                <span class="text-xs text-white font-medium">Liputan Jurnalistik Siar</span>
+                            </div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden aspect-video bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?auto=format&fit=crop&w=600&q=80" alt="Galeri 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+                                <span class="text-xs text-white font-medium">Malam Cipta Sastra</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Social Links -->
+    <footer id="kontak" class="bg-navy-900 text-white pt-16 pb-12 border-t border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <!-- Info UKM -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gold-500 text-navy-900 flex items-center justify-center font-bold font-serif text-xl">
+                            P
+                        </div>
+                        <span class="font-serif font-bold text-xl text-white">UKM Penulis UM</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-md mb-6">
+                        Unit Kegiatan Mahasiswa Penulis Universitas Negeri Malang. Organisasi kemahasiswaan di bidang penalaran, sastra, dan jurnalistik.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-full bg-navy-800 hover:bg-gold-500 hover:text-navy-900 transition flex items-center justify-center text-slate-300">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="w-10 h-10 rounded-full bg-navy-800 hover:bg-gold-500 hover:text-navy-900 transition flex items-center justify-center text-slate-300">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" class="w-10 h-10 rounded-full bg-navy-800 hover:bg-gold-500 hover:text-navy-900 transition flex items-center justify-center text-slate-300">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="mailto:ukmpenulis@um.ac.id" class="w-10 h-10 rounded-full bg-navy-800 hover:bg-gold-500 hover:text-navy-900 transition flex items-center justify-center text-slate-300">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fast Links -->
+                <div>
+                    <h4 class="font-serif font-bold text-lg text-white mb-4">Navigasi</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#tentang" class="hover:text-gold-500 transition">Tentang Kami</a></li>
+                        <li><a href="#pilar" class="hover:text-gold-500 transition">Bidang Kepenulisan</a></li>
+                        <li><a href="#visi-misi" class="hover:text-gold-500 transition">Visi & Misi</a></li>
+                        <li><a href="#struktur" class="hover:text-gold-500 transition">Struktur Organisasi</a></li>
+                        <li><a href="#agenda" class="hover:text-gold-500 transition">Agenda Kegiatan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Alamat Sekretariat -->
+                <div>
+                    <h4 class="font-serif font-bold text-lg text-white mb-4">Sekretariat</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Gedung UKM / Ormawa<br>
+                        Universitas Negeri Malang (UM)<br>
+                        Jl. Semarang No. 5, Malang, Jawa Timur 65145
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-navy-800 text-center text-xs text-slate-500">
+                &copy; 2026 UKM Penulis Universitas Negeri Malang. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
